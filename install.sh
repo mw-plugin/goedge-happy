@@ -33,51 +33,53 @@ Install_App()
 	FILE_TGZ=edge-admin-linux-${ARCH_NAME}-plus-v${VERSION}.zip
 	GOEDGE_DIR=$serverPath/source/goedge/
 
+	https://github.com/mw-plugin/goedge-happy/releases/download/1.0/edge-admin-linux-amd64-plus-v1.3.9.zip
+
 	if [ ! -f $GOEDGE_DIR/${FILE_TGZ} ];then
-		wget -O $GOEDGE_DIR/${FILE_TGZ} https://dl.goedge.cloud/edge/v${VERSION}/${FILE_TGZ}
+		wget -O $GOEDGE_DIR/${FILE_TGZ} https://github.com/mw-plugin/goedge-happy/releases/download/1.0/${FILE_TGZ}
 	fi
 	
-	if [ ! -d $GOEDGE_DIR/edge-admin ];then
+	if [ ! -d $GOEDGE_DIR/edge-happy ];then
 		cd $GOEDGE_DIR && unzip ${FILE_TGZ}
 	fi
 
-	if [ -d $GOEDGE_DIR/edge-admin ];then
-		cp -rf $GOEDGE_DIR/edge-admin/* $serverPath/goedge-admin/
+	if [ -d $GOEDGE_DIR/edge-happy ];then
+		cp -rf $GOEDGE_DIR/edge-happy/* $serverPath/goedge-happy/
 	fi
 
 	if [ -d $GOEDGE_DIR/${FILE_TGZ} ];then
 		rm -rf $GOEDGE_DIR/${FILE_TGZ}
 	fi
 
-	echo "${VERSION}" > $serverPath/goedge-admin/version.pl
+	echo "${VERSION}" > $serverPath/goedge-happy/version.pl
 
-	cd ${rootPath} && python3 ${rootPath}/plugins/goedge-admin/index.py start
-	cd ${rootPath} && python3 ${rootPath}/plugins/goedge-admin/index.py initd_install
+	cd ${rootPath} && python3 ${rootPath}/plugins/goedge-happy/index.py start
+	cd ${rootPath} && python3 ${rootPath}/plugins/goedge-happy/index.py initd_install
 
 	echo '安装goedge完成'
 }
 
 Uninstall_App()
 {
-	if [ -f /usr/lib/systemd/system/goedge-admin.service ];then
-		systemctl stop goedge-admin
-		systemctl disable goedge-admin
-		rm -rf /usr/lib/systemd/system/goedge-admin.service
+	if [ -f /usr/lib/systemd/system/goedge-happy.service ];then
+		systemctl stop goedge-happy
+		systemctl disable goedge-happy
+		rm -rf /usr/lib/systemd/system/goedge-happy.service
 		systemctl daemon-reload
 	fi
 
-	if [ -f /lib/systemd/system/goedge-admin.service ];then
-		systemctl stop goedge-admin
-		systemctl disable goedge-admin
-		rm -rf /lib/systemd/system/goedge-admin.service
+	if [ -f /lib/systemd/system/goedge-happy.service ];then
+		systemctl stop goedge-happy
+		systemctl disable goedge-happy
+		rm -rf /lib/systemd/system/goedge-happy.service
 		systemctl daemon-reload
 	fi
 
-	if [ -d $serverPath/goedge-admin ];then
-		rm -rf $serverPath/goedge-admin
+	if [ -d $serverPath/goedge-happy ];then
+		rm -rf $serverPath/goedge-happy
 	fi
 	
-	echo "卸载redis成功"
+	echo "卸载goedge成功"
 }
 
 action=$1
