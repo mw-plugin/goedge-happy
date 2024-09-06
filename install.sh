@@ -26,7 +26,7 @@ Install_App()
 {
 	echo '正在安装脚本文件...' > $install_tmp
 	mkdir -p $serverPath/source
-	mkdir -p $serverPath/source/goedge_happy
+	mkdir -p $serverPath/source/goedge-happy
 
 	mkdir -p $serverPath/goedge-happy
 
