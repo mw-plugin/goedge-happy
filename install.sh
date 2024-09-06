@@ -38,7 +38,7 @@ Install_App()
 		wget -O $GOEDGE_DIR/${FILE_TGZ} https://github.com/mw-plugin/goedge-happy/releases/download/1.0/${FILE_TGZ}
 	fi
 	
-	if [ ! -d $GOEDGE_DIR/edge-happy ];then
+	if [ ! -d $GOEDGE_DIR/edge-happy/edge-admin ];then
 		cd $GOEDGE_DIR && unzip ${FILE_TGZ}
 	fi
 
