@@ -46,8 +46,8 @@ Install_App()
 		cp -rf $GOEDGE_DIR/edge-happy/edge-admin/* $serverPath/goedge-happy/
 	fi
 
-	if [ -d $GOEDGE_DIR/${FILE_TGZ} ];then
-		rm -rf $GOEDGE_DIR/${FILE_TGZ}
+	if [ -d $GOEDGE_DIR/edge-happy/edge-admin ];then
+		rm -rf $GOEDGE_DIR/edge-happy/edge-admin
 	fi
 
 	echo "${VERSION}" > $serverPath/goedge-happy/version.pl
