@@ -40,9 +40,9 @@ Install_App()
 	
 	if [ ! -d $GOEDGE_DIR/edge-happy/edge-admin ];then
 		cd $GOEDGE_DIR && unzip ${FILE_TGZ}
-	fi
-
-	if [ -d $GOEDGE_DIR/edge-happy/edge-admin ];then
+		cp -rf $GOEDGE_DIR/edge-happy/edge-admin/* $serverPath/goedge-happy/
+		rm -rf $GOEDGE_DIR/edge-happy/edge-admin
+	else
 		cp -rf $GOEDGE_DIR/edge-happy/edge-admin/* $serverPath/goedge-happy/
 		rm -rf $GOEDGE_DIR/edge-happy/edge-admin
 	fi
