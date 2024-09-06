@@ -26,12 +26,12 @@ Install_App()
 {
 	echo '正在安装脚本文件...' > $install_tmp
 	mkdir -p $serverPath/source
-	mkdir -p $serverPath/source/goedge
+	mkdir -p $serverPath/source/goedge_happy
 
 	mkdir -p $serverPath/goedge-happy
 
 	FILE_TGZ=edge-admin-linux-${ARCH_NAME}-plus-v${VERSION}.zip
-	GOEDGE_DIR=$serverPath/source/goedge/
+	GOEDGE_DIR=$serverPath/source/goedge_happy/
 
 	https://github.com/mw-plugin/goedge-happy/releases/download/1.0/edge-admin-linux-amd64-plus-v1.3.9.zip
 
