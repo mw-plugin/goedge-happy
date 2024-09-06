@@ -14,6 +14,10 @@ rm -rf /www/server/mdserver-web/plugins/goedge-happy && cd /www/server/mdserver-
 F4BuVYEKSDWV+I13ISd5NUyBcWOlH0af4/ow9obzYBS3XvYC9IsK86k5UDyyBv9vqJWN2/FQTDbPyuAO0zxYlkLDC0c8rrShs+7PAkqM0O8wBIGknzForgidDZahky5Lo/ZWaPZ1dVFUxmV29ykb0I0b4tv7Q3OtnTylOuzf//MYrlvyw6VJQMGnsttmeHzsNL/r0yDONOEXZoGoLZsuBKnkfXt+qt6bZF+kM1ncbh+sY42BrPTWQ12sXqJS3qHlzU0FFl9lTNzLGYYhq5vi/4sJuPVE50/uLCtslTJdb9zOGR915hnM+jHYsR+jUk0QxOqtreaHpsvNuLkexXbkmA==
 ```
 
+```
+F4BuVYEKSnnWucg5IDVzUWRFEJDPkunFObYNtXSwrxSZaF890JYAJ6KKHJAnRHmyiy1xZcMm4N7/WzzHu5PpEY69VPoUGuKb7KoDgm2iU5ownHIbBMKDmhrN+xtNVO+fW0b4EoHtmqfFkTE3/j7W0CqF4gMb3EdW1U2QDPGxeJgP3PNjEHnBIDzisz7uEZVYfYehEfVcDHgEDcmWHAbcqr8jwMgzHFVtmleijnHcELAI48Y5PhGUQZywcBWhBG/nbdfKsqocX/R6XweaatDaQce4aQ8VwrRQAinSkydMAY3irjdv2XWZQW/yk9W1gl9msPXKZDnCjwFjtDLjq8Xf+LLjKFqFVeEMMHKQVrN+ccY6bbfe1tWLg+fQMqxUUgU5jz0T
+```
+
 # 屏蔽官方域名
 ```
 echo "127.0.0.1 goedge.cloud" | sudo tee -a /etc/hosts > /dev/null
