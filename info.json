@@ -1,0 +1,17 @@
+{
+	"sort": 7,
+	"ps": "CDN & WAF集群管理系统[开心版]",
+	"name": "goedge-happy",
+	"title": "GoEdge管理系统",
+	"shell": "install.sh",
+	"versions":["1.3.9"],
+	"tip": "soft",
+	"checks": "server/goedge-happy",
+	"path": "server/goedge-happy",
+	"display": 1,
+	"author": "goedge-happy",
+	"date": "2024-08-31",
+	"home": "https://goedge.cloud",
+	"type": 0,
+	"pid": "5"
+}
