@@ -28,7 +28,7 @@ Install_App()
 	mkdir -p $serverPath/source
 	mkdir -p $serverPath/source/goedge
 
-	mkdir -p $serverPath/goedge-admin
+	mkdir -p $serverPath/goedge-happy
 
 	FILE_TGZ=edge-admin-linux-${ARCH_NAME}-plus-v${VERSION}.zip
 	GOEDGE_DIR=$serverPath/source/goedge/
