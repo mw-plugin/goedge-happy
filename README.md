@@ -24,3 +24,14 @@ echo "127.0.0.1 global.dl.goedge.cloud" | sudo tee -a /etc/hosts > /dev/null
 echo "127.0.0.1 global.dl.goedge.cn" | sudo tee -a /etc/hosts > /dev/null
 cat /etc/hosts
 ```
+
+### 手动修改hosts文件
+```
+vi /etc/hosts
+127.0.0.1 goedge.cn
+127.0.0.1 goedge.cloud
+127.0.0.1 dl.goedge.cloud
+127.0.0.1 dl.goedge.cn
+127.0.0.1 global.dl.goedge.cloud
+127.0.0.1 global.dl.goedge.cn
+```
