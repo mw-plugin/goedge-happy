@@ -7,7 +7,6 @@ rootPath=$(dirname "$curPath")
 rootPath=$(dirname "$rootPath")
 serverPath=$(dirname "$rootPath")
 
-install_tmp=${rootPath}/tmp/mw_install.pl
 VERSION=$2
 
 # systemctl status goedge-admin
@@ -24,7 +23,7 @@ esac
 
 Install_App()
 {
-	echo '正在安装脚本文件...' > $install_tmp
+	echo '正在安装脚本文件...'
 	mkdir -p $serverPath/source
 	mkdir -p $serverPath/source/goedge-happy
 
